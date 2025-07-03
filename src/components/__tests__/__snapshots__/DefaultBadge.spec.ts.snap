@@ -1,0 +1,5 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`DefaultBadge > render active icon when isDefault is true 1`] = `"<span class="material-icons text-white text-xs rounded-full w-6 h-6 flex items-center justify-center mx-auto bg-green-400" title="Aktif">check</span>"`;
+
+exports[`DefaultBadge > render non active icon when isDefault is false 1`] = `"<span class="material-icons text-white text-xs rounded-full w-6 h-6 flex items-center justify-center mx-auto bg-red-400" title="Tidak Aktif">close</span>"`;

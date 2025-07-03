@@ -1,0 +1,16 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SignerRow > render correctly with given signer data 1`] = `
+"<tr class="hover:bg-gray-50 transition">
+  <td class="p-3 border-t">75.694.638.0-643.000</td>
+  <td class="p-3 border-t">Candra Dwi</td>
+  <td class="p-3 border-t">Wajib Pajak</td>
+  <td class="p-3 border-t text-center">
+    <status-badge-stub active="true"></status-badge-stub>
+  </td>
+  <td class="p-3 border-t">
+    <default-badge-stub isdefault="true"></default-badge-stub>
+  </td>
+  <td class="p-3 border-t"><button class="px-2 py-1 bg-white hover:bg-gray-200 border text-sm rounded mr-2 font-bold text-green-500"><span class="material-icons text-sm"> edit </span></button><button class="px-2 py-1 bg-white hover:bg-gray-200 border text-sm rounded mr-2 font-bold text-red-500"><span class="material-icons text-sm"> delete </span></button></td>
+</tr>"
+`;

@@ -1,0 +1,3 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AddButton.vue > render correctly button 1`] = `"<button class="px-4 py-2 bg-red-400 hover:bg-red-500 text-white rounded-lg shadow text-xs font-bold"> TAMBAH </button>"`;

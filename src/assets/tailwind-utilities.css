@@ -1,0 +1,11 @@
+.form-label {
+  @apply block text-gray-700 font-medium mb-1 text-sm text-gray-600;
+}
+
+.form-input {
+  @apply w-full py-2 border-b rounded text-lg focus:outline-none;
+}
+
+.form-radio {
+  @apply text-blue-600 w-4 h-4;
+}

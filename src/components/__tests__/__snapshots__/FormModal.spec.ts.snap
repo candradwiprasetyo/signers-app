@@ -1,0 +1,63 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`FormModal > renders correctly for add data 1`] = `
+"<div class="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm flex items-center justify-center">
+  <div class="bg-white w-full max-w-md rounded-xl shadow-2xl p-6">
+    <h2 class="text-2xl font-semibold mb-8 text-gray-800">Tambah Penandatangan SPT </h2>
+    <!--v-if-->
+    <form class="space-y-4">
+      <div><label class="form-label">NPWP *</label>
+        <cleave-stub modelvalue="" options="[object Object]" class="form-input" required="" placeholder="__.___.___._-___.___"></cleave-stub>
+      </div>
+      <div><label class="form-label">Nama Penandatangan SPT *</label><input required="" class="form-input"></div>
+      <div><label class="form-label">Bertindak sebagai *</label>
+        <div class="flex gap-8 my-6"><label class="inline-flex items-center"><input type="radio" required="" class="form-radio" value="TAXPAYER"><span class="ml-2 text-gray-700">Wajib Pajak</span></label><label class="inline-flex items-center"><input type="radio" required="" class="form-radio" value="AUTHORIZED_REPRESENTATIVE"><span class="ml-2 text-gray-700">Kuasa</span></label></div>
+      </div>
+      <div class="mt-4"><label class="form-label block mb-2">Status Wajib Pajak *</label>
+        <div class="flex gap-8 my-6"><label class="inline-flex items-center"><input type="radio" required="" class="form-radio" value="ACTIVE"><span class="ml-2 text-gray-700">Aktif</span></label><label class="inline-flex items-center"><input type="radio" required="" class="form-radio" value="NOT_ACTIVE"><span class="ml-2 text-gray-700">Tidak Aktif</span></label></div>
+      </div>
+      <div class="flex items-center pt-6">
+        <div class="flex-1">
+          <div class="flex items-center gap-2 mt-2">
+            <div class="flex-none"><input type="checkbox" id="defaultSignatory" class="w-5 h-5 text-blue-600 rounded border-gray-300 focus:ring-blue-500 flex-none"></div><label for="defaultSignatory" class="form-label !text-blue-500">Jadikan sebagai default</label>
+          </div>
+        </div>
+        <div class="flex-1">
+          <div class="flex justify-end space-x-3"><button type="button" class="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 transition"> Batal </button><button type="submit" class="px-4 py-2 bg-red-400 text-white rounded-lg hover:bg-red-500 transition"> Simpan </button></div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>"
+`;
+
+exports[`FormModal > renders correctly for edit data 1`] = `
+"<div class="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm flex items-center justify-center">
+  <div class="bg-white w-full max-w-md rounded-xl shadow-2xl p-6">
+    <h2 class="text-2xl font-semibold mb-8 text-gray-800">Edit Penandatangan SPT </h2>
+    <div class="mb-4 p-4 text-sm text-yellow-800 bg-yellow-100 border border-yellow-300 rounded"> Fitur edit dibatasi oleh server. Tidak dapat mengakses PUT API. </div>
+    <form class="space-y-4">
+      <div><label class="form-label">NPWP *</label>
+        <cleave-stub modelvalue="756946380643000" options="[object Object]" class="form-input" required="" placeholder="__.___.___._-___.___"></cleave-stub>
+      </div>
+      <div><label class="form-label">Nama Penandatangan SPT *</label><input required="" class="form-input"></div>
+      <div><label class="form-label">Bertindak sebagai *</label>
+        <div class="flex gap-8 my-6"><label class="inline-flex items-center"><input type="radio" required="" class="form-radio" value="TAXPAYER"><span class="ml-2 text-gray-700">Wajib Pajak</span></label><label class="inline-flex items-center"><input type="radio" required="" class="form-radio" value="AUTHORIZED_REPRESENTATIVE"><span class="ml-2 text-gray-700">Kuasa</span></label></div>
+      </div>
+      <div class="mt-4"><label class="form-label block mb-2">Status Wajib Pajak *</label>
+        <div class="flex gap-8 my-6"><label class="inline-flex items-center"><input type="radio" required="" class="form-radio" value="ACTIVE"><span class="ml-2 text-gray-700">Aktif</span></label><label class="inline-flex items-center"><input type="radio" required="" class="form-radio" value="NOT_ACTIVE"><span class="ml-2 text-gray-700">Tidak Aktif</span></label></div>
+      </div>
+      <div class="flex items-center pt-6">
+        <div class="flex-1">
+          <div class="flex items-center gap-2 mt-2">
+            <div class="flex-none"><input type="checkbox" id="defaultSignatory" class="w-5 h-5 text-blue-600 rounded border-gray-300 focus:ring-blue-500 flex-none"></div><label for="defaultSignatory" class="form-label !text-blue-500">Jadikan sebagai default</label>
+          </div>
+        </div>
+        <div class="flex-1">
+          <div class="flex justify-end space-x-3"><button type="button" class="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 transition"> Batal </button><button type="submit" class="px-4 py-2 bg-red-400 text-white rounded-lg hover:bg-red-500 transition"> Simpan </button></div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>"
+`;
