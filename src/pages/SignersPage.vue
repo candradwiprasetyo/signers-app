@@ -52,6 +52,7 @@ const showAddModal = ref(false)
 const selectedSigner = ref<Signer | null>(null)
 const showConfirm = ref(false)
 const deleteId = ref<string | null>(null)
+const baseURL = import.meta.env.VITE_API_URL
 
 const notification = reactive({
   show: false,
@@ -73,7 +74,7 @@ onMounted(fetchSigners)
 
 async function fetchSigners() {
   try {
-    const { data } = await axios.get('/api/v1/signers')
+    const { data } = await axios.get(`${baseURL}signers`)
     signers.value = data.data
   } catch (err: unknown) {
     if (err instanceof Error) {
@@ -110,7 +111,7 @@ function handleError(message: string) {
 async function confirmDelete() {
   showConfirm.value = false
   try {
-    await axios.delete(`/api/v1/signers/${deleteId.value}`)
+    await axios.delete(`${baseURL}signers/${deleteId.value}`)
     signers.value = signers.value.filter((s) => s.id !== deleteId.value)
     showNotification('Data berhasil dihapus!', 'success')
   } catch (err: unknown) {

@@ -140,6 +140,7 @@ const props = defineProps<{
 }>()
 
 const isEditMode = computed(() => !!props.signer)
+const baseURL = import.meta.env.VITE_API_URL
 
 const form = reactive({
   name: '',
@@ -182,9 +183,9 @@ async function submitForm() {
     let response
 
     if (isEditMode.value && props.signer) {
-      response = await axios.post(`/api/v1/signers/${props.signer.id}`, payload)
+      response = await axios.post(`${baseURL}signers/${props.signer.id}`, payload)
     } else {
-      response = await axios.post(`/api/v1/signers`, payload)
+      response = await axios.post(`${baseURL}signers`, payload)
     }
 
     emit('saved', response.data.data)
